@@ -38,7 +38,7 @@
 
 <body>
     <nav class="navbar navbar-expand-sm bg-white navbar-light sticky-top">
-        <a class="navbar-brand" href="{{ route('admin') }}">
+        <a class="navbar-brand" href="{{ route('home') }}">
             <img src="/images/kosin.png" alt="brand" style="width:120px;">
         </a>
         <div style="margin-left: auto;margin-right: 0;">

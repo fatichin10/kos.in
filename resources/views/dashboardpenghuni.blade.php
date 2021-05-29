@@ -1,4 +1,4 @@
-@extends('template')
+@extends('templatepenghuni')
 
 @section('konten')
 
@@ -37,7 +37,7 @@
             <div class="col-lg-4">
                 <br>
                 <h3>Halo, selamat datang!</h3>
-                <h1><b>Budi Waluyo</b></h1>
+                <h1><b>Robi Sedati</b></h1>
             </div>
         </div>
     </div>
@@ -73,23 +73,6 @@
                                     <i class="iconify icon" data-inline="false" data-icon="ion:bed-outline"></i>
                                 </div>
                                 <h3>Kamar</h3>
-                                <br>
-                            </div>
-                        </button>
-                    </a>
-                </div>
-                <!--Furniture-->
-                <div class="col-lg-2">
-                    <a href="#">
-                        <button class='btn btn-lg'
-                            style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
-                            <br>
-                            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                                <div class="features-icons-icon d-flex justify-content-center">
-                                    <i class="iconify icon" data-inline="false" data-icon="mdi:table-furniture"
-                                        style="color: #4e4b66;"></i>
-                                </div>
-                                <h3>Furniture</h3>
                                 <br>
                             </div>
                         </button>
