@@ -37,6 +37,13 @@ Route::get('/kamar/edit', function () {return view('kamar.edit');})->name('edit'
 Route::get('/kamar', function () {return view('kamar.index');})->name('kamar');
 
 Route::get('/tagihanpenghuni', function () {return view('tagihan.indexpenghuni');})->name('tagihan penghuni');
+Route::get('/detailtagihanpenghuni', function () {return view('tagihan.detailtagihankontrak');})->name('detail tagihan penghuni');
+
+Route::get('/history', function () {return view('laundry.history');})->name('history laundry');
+Route::get('/buatpesanan', function () {return view('laundry.buatpesanan');})->name('buat pesanan');
+Route::get('/detailpesanan', function () {return view('laundry.detailpesanan');})->name('detail pesanan');
+Route::get('/setujuipesanan', function () {return view('laundry.buatpesananpengelola');})->name('setujui pesanan');
+Route::get('/daftarpesanan', function () {return view('laundry.daftarpesananpengelola');})->name('daftar pesanan');
 
 
 
