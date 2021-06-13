@@ -36,6 +36,8 @@ Route::get('/kamar/buat', function () {return view('kamar.buat');})->name('buat'
 Route::get('/kamar/edit', function () {return view('kamar.edit');})->name('edit');
 Route::get('/kamar', function () {return view('kamar.index');})->name('kamar');
 
+Route::get('/tagihanpenghuni', function () {return view('tagihan.indexpenghuni');})->name('tagihan penghuni');
+
 
 
 
