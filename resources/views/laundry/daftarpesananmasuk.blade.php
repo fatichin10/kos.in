@@ -52,9 +52,11 @@
             <div class="col-lg-4">
                 <h3 style="margin-top: 20px">ID Pesanan</h3>
             </div>
-            <div class="col-lg-4">
-                <img src="/images/check.png"><span class="status-aktif">Robi Sedati</span>
-                <h6 style="margin-left: 40px">Belum Ditangani</h6>
+            <div class="col-lg-3">
+                <h3 style="margin-top: 20px">Rudi Sedati</h3>
+            </div>
+            <div class="col-lg-3">
+                <img src="/images/check.png" style="margin-top: 20px"><span class="status-aktif">Telah Ditangani</span>
             </div>
         </div>
         <hr>
