@@ -53,7 +53,7 @@
                 <img src="/images/calendar.png"> 07 Mei 2021
                 <img src="/images/calendar.png"> -
             </div>
-            <div class="col-lg-2" style="text-align: center; margin: 20px 0px">
+            <div class="col-lg-3" style="text-align: center; margin: 20px 0px">
                 <img src="/images/check.png"><span class="status-aktif">Belum Ditangani</span>
             <!--</div>
             <div class="col-lg-2" style="text-align: center; margin: 20px 0px">
