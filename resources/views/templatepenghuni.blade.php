@@ -44,7 +44,7 @@
         <div style="margin-left: auto;margin-right: 0;">
             <a href="#">
                 <button type="button" class="btn btn-outline-dark">
-                    Sign In
+                    Log Out
                     <span class="iconify" data-inline="false" data-icon="mi:log-out" style="font-size: 18px;"></span>
                 </button>
             </a>
