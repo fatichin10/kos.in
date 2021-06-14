@@ -53,9 +53,13 @@
             <div class="col-lg-4">
                 <h3 style="margin-top: 20px">Januari 2019</h3>
             </div>
-            <div class="col-lg-4">
+
+            <div class="col-lg-3">
                 <img src="/images/check.png"><span class="status-aktif">Lunas</span>
                 <h6 style="margin-left: 40px">18 Januari 2019</h6>
+            </div>
+            <div class="col-lg-3">
+                <h2 class="status-aktif">Rp2.100.000,00</h2>
             </div>
         </div>
         <hr>
