@@ -33,7 +33,7 @@
                 <div class="container background-box" style="padding-top: 30px">
                     <form action="#" method="#">
                         {{ csrf_field() }}
-                        <input type="submit" value="Simpan" class="btn btn-success tombol" style="margin-top: -70px">
+
                         <div class="row">
                             <div class="col-lg-2" style="margin-bottom: 30px">
                                 <input type="text" name="id" class="form-control btn-dark" value="xxxx" disabled>
@@ -63,18 +63,19 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="tglbayar" class="col-lg-3">Tanggal Pembayaran</label>
+                            <label for="tgltagih" class="col-lg-3">Tanggal Pembayaran <span
+                                    style="color: #FC4E12">*</span></label>
                             <div class="col-lg-3">
-                                <input type="date" name="tgltagih" class="form-control isian" id="tgltagih">
+                                <input type="text" name="tglbayar" class="form-control isian" id="tglbayar"
+                                    value="18/01/2019" disabled>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="status" class="col-lg-3">Status </label>
                             <div class="col-lg-3">
-                                <select name="status" class="form-control isian" id="status">
-                                    <option value="Belum Lunas">Belum Lunas</option>
-                                    <option value="Lunas">Lunas</option>
-                                </select>
+                                <input type="text" name="status" class="form-control isian" id="status"
+                                    value="Lunas" disabled>
+
                             </div>
                         </div>
                     </form>
