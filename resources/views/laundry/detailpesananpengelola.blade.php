@@ -33,7 +33,7 @@
                 <div class="container background-box" style="padding-top: 30px">
                     <form action="#" method="#">
                         {{ csrf_field() }}
-                        <input type="submit" value="Batal" class="btn btn-success tombol" style="margin-top: -70px">
+                        <input type="submit" value="Simpan" class="btn btn-success tombol" style="margin-top: -70px">
                         <div class="row">
                             <div class="col-lg-2" style="margin-bottom: 30px">
                                 <input type="text" name="id" class="form-control btn-dark" value="xxxx" disabled>
@@ -42,9 +42,8 @@
                         <div class="form-group row">
                             <label for="nama" class="col-lg-3">Nama Penghuni<span style="color: #FC4E12">*</span></label>
                             <div class="col-lg-6">
-                                <select name="nama" required="required" class="form-control isian" id="nama">
-                                    <option value=""></option>
-                                </select>
+                                <input type="text" name="nama" class="form-control isian" id="nama" value="Rudi Sedati"
+                                    disabled>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -59,7 +58,7 @@
                                     style="color: #FC4E12">*</span></label>
                             <div class="col-lg-6">
                                 <input type="text" name="periode" class="form-control isian" id="periode"
-                                    value="Januari 2019" disabled>
+                                    value="15/01/2019" disabled>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -71,21 +70,22 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="biaya" class="col-lg-3">Berat <span style="color: #FC4E12">*</span></label>
+                            <label for="berat" class="col-lg-3">Berat <span style="color: #FC4E12">*</span></label>
                             <div class="col-lg-6">
-                                <input type="number" name="biaya" required="required" class="form-control isian" id="berat"
-                                    min="0" placeholder="Biaya dalam Rupiah">
+                                <input type="number" name="berat" class="form-control isian" id="berat"
+                                    value="3" disabled>
                             </div>
                         </div>
-                            <label for="status" class="col-lg-3">Status </label>
-                            <div class="col-lg-3">
+                        <div class="form-group row">
+                            <label for="status" class="col-lg-3">Status<span style="color: #FC4E12">*</span></label>
+                            <div class="col-lg-6">
                                 <select name="status" class="form-control isian" id="status">
                                     <option value="Belum Lunas">Terima </option>
                                     <option value="Lunas">Tolak</option>
                                     <option value="Lunas">Selesai</option>
                                 </select>
                             </div>
-                        </div>
+
                     </form>
                 </div>
             </div>
