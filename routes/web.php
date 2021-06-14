@@ -49,6 +49,15 @@ Route::get('/detailpesanan', function () {return view('laundry.detailpesanan');}
 Route::get('/daftarpesananmasuk', function () {return view('laundry.daftarpesananmasuk');})->name('daftar pesanan masuk');
 Route::get('/detailpesananpengelola', function () {return view('laundry.detailpesananpengelola');})->name('detail pesanan pengelola');
 
+Route::get('/keluhan', function () {return view('keluhan.index');})->name('keluhan');
+Route::get('/keluhan/edit', function () {return view('keluhan.edit');})->name('edit');
+Route::get('/keluhan/detail', function () {return view('keluhan.detail');})->name('detail');
+Route::get('/keluhanpenghuni', function () {return view('keluhan.indexpenghuni');})->name('keluhanpenghuni');
+Route::get('/keluhan/buat', function () {return view('keluhan.buat');})->name('buat');
+Route::get('/keluhan/buatsuccess', function () {return view('keluhan.buatsuccess');})->name('buatsuccess');
+Route::get('/keluhanpenghuni/detail', function () {return view('keluhan.detailpenghuni');})->name('detailpenghuni');
+
+
 
 
 
