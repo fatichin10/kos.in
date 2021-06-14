@@ -55,6 +55,17 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="fasilitas" class="col-lg-3">Fasilitas<span style="color: #FC4E12">*</span></label>
+                            <form>
+                                <span>
+                                <input type="checkbox" id="ac" name="vehicle1" value="ac">
+                                <label for="ac"> AC</label><br>
+                                <span>
+                                <input type="checkbox" id="kamarmandi" name="vehicle2" value="kamarmandi">
+                                <label for="kamarmandi"> Kamar Mandi</label><br>
+                            </form>
+                        </div>
                     </form>
                 </div>
             </div>
