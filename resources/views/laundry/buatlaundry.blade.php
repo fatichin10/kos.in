@@ -33,13 +33,12 @@
                 <div class="container background-box" style="padding-top: 110px">
                     <form action="#" method="#">
                         {{ csrf_field() }}
-                        <input type="submit" value="Simpan" class="btn btn-success tombol" style="margin-top: -150px">
+                        <input type="submit" value="Kirim" class="btn btn-success tombol" style="margin-top: -150px">
                         <div class="form-group row">
                             <label for="nama" class="col-lg-3">Nama Penghuni<span style="color: #FC4E12">*</span></label>
                             <div class="col-lg-6">
-                                <select name="nama" required="required" class="form-control isian" id="nama">
-                                    <option value=""></option>
-                                </select>
+                                <input type="text" name="nama" required="required" class="form-control isian"
+                                id="nama">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -63,14 +62,6 @@
                             <div class="col-lg-6">
                                 <input type="number" name="biaya" required="required" class="form-control isian" id="berat"
                                     min="0" placeholder="Biaya dalam Rupiah">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="kamar" class="col-lg-3">Status <span style="color: #FC4E12">*</span></label>
-                            <div class="col-lg-3">
-                                <select name="kamar" required="required" class="form-control isian" id="status">
-                                    <option value=""></option>
-                                </select>
                             </div>
                         </div>
                     </form>
