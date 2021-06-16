@@ -48,7 +48,7 @@
             <div class="row">
                 <!--Akun-->
                 <div class="col-lg-2">
-                    <a href="#">
+                    <a href="{{ route('akun') }}">
                         <button class='btn btn-lg'
                             style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
                             <br>
@@ -64,7 +64,7 @@
                 </div>
                 <!--Kamar-->
                 <div class="col-lg-2">
-                    <a href="#">
+                    <a href="{{ route('kamar') }}">
                         <button class='btn btn-lg'
                             style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
                             <br>
@@ -97,7 +97,7 @@
                 </div>
                 <!--Kontrak-->
                 <div class="col-lg-2">
-                    <a href="#">
+                    <a href="{{ route('kontrak') }}">
                         <button class='btn btn-lg'
                             style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
                             <br>
@@ -114,7 +114,7 @@
                 </div>
                 <!--Tagihan-->
                 <div class="col-lg-2">
-                    <a href="#">
+                    <a href="{{ route('aktif') }}">
                         <button class='btn btn-lg'
                             style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
                             <br>
@@ -131,7 +131,7 @@
                 </div>
                 <!--Keluhan-->
                 <div class="col-lg-2">
-                    <a href="#">
+                    <a href="{{ route('keluhan') }}">
                         <button class='btn btn-lg'
                             style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
                             <br>
@@ -148,7 +148,7 @@
                 </div>
                 <!--Laundry-->
                 <div class="col-lg-2">
-                    <a href="#">
+                    <a href="{{ route('daftar pesanan masuk') }}">
                         <button class='btn btn-lg'
                             style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
                             <br>

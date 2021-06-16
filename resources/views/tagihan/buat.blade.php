@@ -22,23 +22,26 @@
         Kontrak Aktif / Tagihan Kontrak / Buat Tagihan
         <div class="row" style="margin-top: 10px">
             <div class="col-lg-1">
-                <a href="#">
+                <a href="/kontrak/aktif">
                     <img src="/images/backicon.png" alt="back">
                 </a>
             </div>
             <div class="col-lg-11" style="margin-top: 17px">
-                <h3>Buat Kontrak</h3>
+                <h3>Buat Tagihan</h3>
 
                 <!--Form-->
                 <div class="container background-box" style="padding-top: 110px">
-                    <form action="#" method="#">
+                    <form action="tagihan/store" method="post">
                         {{ csrf_field() }}
                         <input type="submit" value="Simpan" class="btn btn-success tombol" style="margin-top: -150px">
                         <div class="form-group row">
                             <label for="idkontrak" class="col-lg-3">ID Kontrak </label>
                             <div class="col-lg-2">
-                                <input type="text" name="idkontrak" class="form-control isian" id="idkontrak"
-                                    value="xxxx" disabled>
+                                <select name='idkontrak' required="required" class="form-control isian" id="idkontrak">
+                                    @foreach ($kontrak as $k)
+                                        <option value="{{ $k->idKontrak }}">{{ $k->idKontrak }}</option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row">

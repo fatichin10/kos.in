@@ -14,13 +14,13 @@
         Akun
         <div class="row" style="margin-top: 10px">
             <div class="col-lg-1">
-                <a href="#">
+                <a href="/admin">
                     <img src="/images/backicon.png" alt="back">
                 </a>
             </div>
             <div class="col-lg-11" style="margin-top: 17px">
                 <h3 style="display: inline">Daftar Akun</h3>
-                <a href="#" class="btn btn-success tombol" style="font-size: 18px"> + Buat Akun </a>
+                <a href="/akun/buat" class="btn btn-success tombol" style="font-size: 18px"> + Buat Akun </a>
             </div>
         </div>
     </div>
@@ -43,8 +43,8 @@
 
             </div>
             <div class="col-lg-4" style="text-align: center; margin: 20px 0px">
-                <a href="#" class="btn btn-success tombol">Edit Akun</a>
-                <a href="#" class="btn btn-success tombol">Detail Akun</a>
+                <a href="/akun/kelola" class="btn btn-success tombol">Edit Akun</a>
+                <a href="/akun/detail" class="btn btn-success tombol">Detail Akun</a>
 
             </div>
         </div>

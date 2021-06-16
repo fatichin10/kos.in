@@ -25,13 +25,18 @@ Route::get('/akun/kelola', function () {return view('akun.kelola');})->name('kel
 Route::get('/akun/buat',function () {return view('akun.buat');})->name('buat');
 Route::get('/akun/detail',function () {return view('akun.detail');})->name('detail');
 
-Route::get('/kontrak', function () {return view('kontrak.index');})->name('kontrak');
-Route::get('/kontrak/buat', function () {return view('kontrak.buat');})->name('buat');
-Route::get('/kontrak/aktif', function () {return view('kontrak.aktif');})->name('aktif');
+Route::get('/kontrak', 'KontrakController@index')->name('kontrak');
+Route::get('/kontrak/buat', 'KontrakController@buat')->name('buat');
+Route::post('/kontrak/store', 'KontrakController@store');
+Route::get('/kontrak/selesai/{idKontrak}', 'KontrakController@selesai');
+Route::get('/kontrak/aktif', 'KontrakController@aktif')->name('aktif');
 
-Route::get('/tagihan', function () {return view('tagihan.index');})->name('tagihan');
-Route::get('/tagihan/buat', function () {return view('tagihan.buat');})->name('buat');
-Route::get('/tagihan/edit', function () {return view('tagihan.edit');})->name('edit');
+Route::get('/tagihan/lihat/{idKontrak}', 'TagihanController@index')->name('tagihan');
+Route::get('/tagihan/buat', 'TagihanController@buat')->name('buat');
+Route::post('/tagihan/store', 'TagihanController@store');
+Route::get('/tagihan/edit/{idTagihan}', 'TagihanController@edit')->name('edit');
+Route::post('/tagihan/update', 'TagihanController@update');
+Route::get('/tagihan/hapus/{idTagihan}', 'TagihanController@hapus');
 
 Route::get('/kamar/buat', function () {return view('kamar.buat');})->name('buat');
 Route::get('/kamar/edit', function () {return view('kamar.edit');})->name('edit');

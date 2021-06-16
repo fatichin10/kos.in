@@ -26,13 +26,13 @@
         Kontrak
         <div class="row" style="margin-top: 10px">
             <div class="col-lg-1">
-                <a href="#">
+                <a href="/admin">
                     <img src="/images/backicon.png" alt="back">
                 </a>
             </div>
             <div class="col-lg-11" style="margin-top: 17px">
                 <h3 style="display: inline">Daftar Kontrak</h3>
-                <a href="#" class="btn btn-success tombol" style="font-size: 18px"> + Buat kontrak </a>
+                <a href="/kontrak/buat" class="btn btn-success tombol" style="font-size: 18px"> + Buat kontrak </a>
             </div>
         </div>
     </div>
@@ -40,29 +40,33 @@
     <br>
 
     <div class="container background-box">
-        <div class="row">
-            <div class="col-lg-2" style="text-align: center">
-                <i class="iconify" data-inline="false" data-icon="teenyicons:contract-outline"
-                    style="color: #4e4b66; font-size: 60px;">
-                </i>
-                <h6>xxxx</h6>
+
+        @foreach ($kontrak as $k)
+            <div class="row">
+                <div class="col-lg-2" style="text-align: center">
+                    <i class="iconify" data-inline="false" data-icon="teenyicons:contract-outline"
+                        style="color: #4e4b66; font-size: 60px;">
+                    </i>
+                    <h6>{{ $k->idKontrak }}</h6>
+                </div>
+                <div class="col-lg-4">
+                    <h2>{{ $k->penghuni }}</h2>
+                    <b>{{ $k->kamar }} <span style="float: right">Rp {{ $k->biaya }}</span></b>
+                </div>
+                <div class="col-lg-2">
+                    <img src="/images/calendar.png"> {{ $k->tanggalMasuk }}
+                    <img src="/images/calendar.png"> {{ $k->tanggalKeluar }}
+                </div>
+                <div class="col-lg-2" style="text-align: center; margin: 20px 0px">
+                    <img src="/images/check.png"><span class="status-aktif">{{ $k->status }}</span>
+                </div>
+                <div class="col-lg-2" style="text-align: center; margin: 20px 0px">
+                    <a href="/kontrak/selesai/{{ $k->idKontrak }}" class="btn btn-success tombol">Kontrak selesai</a>
+                </div>
             </div>
-            <div class="col-lg-4">
-                <h2>Robi Sedati</h2>
-                <b>Kamar 201 <span style="float: right">Rp2.100.000,00</span></b>
-            </div>
-            <div class="col-lg-2">
-                <img src="/images/calendar.png"> 18 Januari 2019
-                <img src="/images/calendar.png"> -
-            </div>
-            <div class="col-lg-2" style="text-align: center; margin: 20px 0px">
-                <img src="/images/check.png"><span class="status-aktif">Aktif</span>
-            </div>
-            <div class="col-lg-2" style="text-align: center; margin: 20px 0px">
-                <a href="#" class="btn btn-success tombol">Kontrak selesai</a>
-            </div>
-        </div>
-        <hr>
+            <hr>
+        @endforeach
+
     </div>
 
 @endsection

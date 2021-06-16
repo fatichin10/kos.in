@@ -19,7 +19,7 @@
         Kontrak Aktif
         <div class="row" style="margin-top: 10px">
             <div class="col-lg-1">
-                <a href="#">
+                <a href="/admin">
                     <img src="/images/backicon.png" alt="back">
                 </a>
             </div>
@@ -32,25 +32,30 @@
     <br>
 
     <div class="container background-box">
-        <div class="row">
-            <div class="col-lg-2" style="text-align: center">
-                <i class="iconify" data-inline="false" data-icon="teenyicons:contract-outline"
-                    style="color: #4e4b66; font-size: 60px;">
-                </i>
-                <h6>xxxx</h6>
+
+        @foreach ($kontrak as $k)
+            <div class="row">
+                <div class="col-lg-2" style="text-align: center">
+                    <i class="iconify" data-inline="false" data-icon="teenyicons:contract-outline"
+                        style="color: #4e4b66; font-size: 60px;">
+                    </i>
+                    <h6>{{ $k->idKontrak }}</h6>
+                </div>
+                <div class="col-lg-4">
+                    <h2>{{ $k->penghuni }}</h2>
+                    <b>{{ $k->kamar }} <span style="float: right"><img src="/images/calendar.png" width="17%">
+                            {{ $k->tanggalMasuk }} </span></b>
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="status-aktif">Rp {{ $k->biaya }}</h2>
+                </div>
+                <div class="col-lg-2" style="text-align: center; margin: 20px 0px">
+                    <a href="/tagihan/lihat/{{ $k->idKontrak }}" class="btn btn-success tombol">Lihat Tagihan</a>
+                </div>
             </div>
-            <div class="col-lg-4">
-                <h2>Robi Sedati</h2>
-                <b>Kamar 201 <span style="float: right"><img src="/images/calendar.png" width="17%"> 18 Januari 2019</span></b>
-            </div>
-            <div class="col-lg-4">
-                <h2 class="status-aktif">Rp2.100.000,00</h2>
-            </div>
-            <div class="col-lg-2" style="text-align: center; margin: 20px 0px">
-                <a href="#" class="btn btn-success tombol">Lihat Tagihan</a>
-            </div>
-        </div>
-        <hr>
+            <hr>
+        @endforeach
+
     </div>
 
 @endsection
