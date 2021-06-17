@@ -53,15 +53,14 @@ class KontrakController extends Controller
 
     public function selesai($idKontrak)
     {
-        //ambil id kamar
+        /*//ambil id kamar
         $kamar = DB::table('kontrak')
-            ->where('idKontrak', $idKontrak)
-            ->select('idKamar')->get();
+            ->where('idKontrak', $idKontrak)->get();
 
         //ganti status kamar
         DB::table('kamar')
-            ->where('idKamar', $kamar)
-            ->update(['status' => 'kosong']);
+            ->where('idKamar', $kamar->idKamar)
+            ->update(['status' => 'kosong']);*/
 
         // update status kontrak
         DB::table('kontrak')->where('idKontrak', $idKontrak)->update([

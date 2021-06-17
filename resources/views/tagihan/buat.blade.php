@@ -31,7 +31,7 @@
 
                 <!--Form-->
                 <div class="container background-box" style="padding-top: 110px">
-                    <form action="tagihan/store" method="post">
+                    <form action="/tagihan/store" method="post">
                         {{ csrf_field() }}
                         <input type="submit" value="Simpan" class="btn btn-success tombol" style="margin-top: -150px">
                         <div class="form-group row">
