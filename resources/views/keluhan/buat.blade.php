@@ -25,10 +25,6 @@
             <div class="col-lg-6" style="margin-top: 17px">
                 <h3>Buat Keluhan</h3>
             </div>
-            <div class="col-lg-6" style="margin-top: 17px;">
-                <a href="#" class="btn btn-light tombol2">Batal</a>
-                <a href="#" class="btn btn-success tombol">Submit</a>
-            </div>
         </div>
     </div>
     <!--Form-->
@@ -37,7 +33,7 @@
         <form action="#" method="#" style="padding-left: 50px">
             {{ csrf_field() }}
 
-
+            <input type="submit" value="Submit" class="btn btn-success tombol" style="margin-top: -100px">
             <div class="row">
                 <div class="col-lg-2" style="margin-bottom: 30px">
                     <input type="text" name="id" class="form-control btn-dark text-center" value="ID" disabled

@@ -26,13 +26,13 @@
         Laundry
         <div class="row" style="margin-top: 10px">
             <div class="col-lg-1">
-                <a href="#">
+                <a href="/home">
                     <img src="/images/backicon.png" alt="back">
                 </a>
             </div>
             <div class="col-lg-11" style="margin-top: 17px">
                 <h3 style="display: inline">History Laundry</h3>
-                <a href="#" class="btn btn-success tombol" style="font-size: 18px"> + Buat Pesanan </a>
+                <a href="/laundrypenghuni/buatpesanan" class="btn btn-success tombol" style="font-size: 18px"> + Buat Pesanan </a>
             </div>
         </div>
     </div>
@@ -55,10 +55,10 @@
             </div>
             <div class="col-lg-3" style="text-align: center; margin: 20px 0px">
                 <img src="/images/check.png"><span class="status-aktif">Belum Ditangani</span>
-            <!--</div>
-            <div class="col-lg-2" style="text-align: center; margin: 20px 0px">
-            <a href="#" class="btn btn-success tombol">Kontrak selesai</a>
-            </div>-->
+            </div>
+            <div class="col-lg-1" style="text-align: center; margin: 20px 0px">
+            <a href="laundrypenghuni/detailpesanan" class="btn btn-success tombol">Detail</a>
+            </div>
         </div>
         <hr>
     </div>

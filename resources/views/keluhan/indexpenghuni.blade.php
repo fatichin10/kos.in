@@ -1,4 +1,4 @@
-@extends('template')
+@extends('templatepenghuni')
 
 @section('konten')
 
@@ -26,13 +26,13 @@
         Keluhan
         <div class="row" style="margin-top: 10px">
             <div class="col-lg-1">
-                <a href="#">
+                <a href="/home">
                     <img src="/images/backicon.png" alt="back">
                 </a>
             </div>
             <div class="col-lg-11" style="margin-top: 17px">
                 <h3 style="display: inline">Daftar Keluhan</h3>
-                <a href="#" class="btn btn-success tombol" style="font-size: 18px"> + Buat keluhan </a>
+                <a href="keluhan/buat" class="btn btn-success tombol" style="font-size: 18px"> + Buat keluhan </a>
             </div>
         </div>
     </div>

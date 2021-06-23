@@ -1,4 +1,4 @@
-@extends('template')
+@extends('templatepenghuni')
 
 @section('konten')
 
@@ -22,7 +22,7 @@
         Keluhan / Detail Keluhan
         <div class="row" style="margin-top: 10px">
             <div class="col-lg-1">
-                <a href="#">
+                <a href="/keluhanpenghuni">
                     <img src="/images/backicon.png" alt="back">
                 </a>
             </div>

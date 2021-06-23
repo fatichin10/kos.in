@@ -28,21 +28,21 @@
         Keluhan / Detail Keluhan
         <div class="row" style="margin-top: 10px">
             <div class="col-lg-1">
-                <a href="#">
+                <a href="/keluhan">
                     <img src="/images/backicon.png" alt="back" style="width:50px; height:50px;">
                 </a>
             </div>
             <div class="col-lg-11" style="margin-top: 17px">
                 <h3>Detail Keluhan</h3>
-                <!--Alert-->
-                <!--Belum ada icon nya!!!!!!!!!!-->
+                <!--Alert
+                Belum ada icon nya!!!!!!!!!!
                 <div class="alert alert-custom  fade in alert-dismissable show" style="margin-top:18px;">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true" style="font-size:20px">×</span></button>
                     <img src="images/checkmark.png" alt="success" style="width: 18px;">
                     <strong>Status laporan keluhan berhasil diubah!</strong>
                 </div>
-                <!--Form-->
+                Form-->
                 <div class="container background-box" style="padding-top: 54px">
                     <form action="#" method="#" style="padding-left: 50px">
                         {{ csrf_field() }}

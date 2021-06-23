@@ -43,9 +43,7 @@
 
             </div>
             <div class="col-lg-4" style="text-align: center; margin: 20px 0px">
-                <a href="/akun/kelola" class="btn btn-success tombol">Edit Akun</a>
                 <a href="/akun/detail" class="btn btn-success tombol">Detail Akun</a>
-
             </div>
         </div>
     </div>

@@ -80,7 +80,7 @@
                 </div>
                 <!--Furniture-->
                 <div class="col-lg-2">
-                    <a href="#">
+                    <a href="furniture">
                         <button class='btn btn-lg'
                             style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
                             <br>

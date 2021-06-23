@@ -62,16 +62,19 @@
                     <td>ID Keluhan</td>
                     <td>No. Kamar</td>
                     <td>Status</td>
+                    <td><a href="/keluhan/detail" class="btn btn-success tombol">Detail</a>
                 </tr>
                 <tr>
                     <td>ID Keluhan</td>
                     <td>No. Kamar</td>
                     <td>Status</td>
+                    <td><a href="/keluhan/detail" class="btn btn-success tombol">Detail</a>
                 </tr>
                 <tr>
                     <td>ID Keluhan</td>
                     <td>No. Kamar</td>
                     <td>Status</td>
+                    <td><a href="/keluhan/detail" class="btn btn-success tombol">Detail</a>
                 </tr>
             </tbody>
         </table>

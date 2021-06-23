@@ -22,7 +22,7 @@
         Laundry / Detail Pesanan
         <div class="row" style="margin-top: 10px">
             <div class="col-lg-1">
-                <a href="#">
+                <a href="/laundrypenghuni">
                     <img src="/images/backicon.png" alt="back">
                 </a>
             </div>

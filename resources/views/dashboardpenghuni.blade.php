@@ -48,7 +48,7 @@
             <div class="row">
                 <!--Akun-->
                 <div class="col-lg-2">
-                    <a href="#">
+                    <a href="akun/kelola">
                         <button class='btn btn-lg'
                             style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
                             <br>
@@ -64,7 +64,7 @@
                 </div>
                 <!--Kamar-->
                 <div class="col-lg-2">
-                    <a href="#">
+                    <a href="kamarpenghuni">
                         <button class='btn btn-lg'
                             style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
                             <br>
@@ -80,7 +80,7 @@
                 </div>
                 <!--Kontrak-->
                 <div class="col-lg-2">
-                    <a href="#">
+                    <a href="/kontrakpenghuni">
                         <button class='btn btn-lg'
                             style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
                             <br>
@@ -97,7 +97,7 @@
                 </div>
                 <!--Tagihan-->
                 <div class="col-lg-2">
-                    <a href="#">
+                    <a href="tagihanpenghuni">
                         <button class='btn btn-lg'
                             style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
                             <br>
@@ -114,7 +114,7 @@
                 </div>
                 <!--Keluhan-->
                 <div class="col-lg-2">
-                    <a href="#">
+                    <a href="/keluhanpenghuni">
                         <button class='btn btn-lg'
                             style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
                             <br>
@@ -131,7 +131,7 @@
                 </div>
                 <!--Laundry-->
                 <div class="col-lg-2">
-                    <a href="#">
+                    <a href="laundrypenghuni">
                         <button class='btn btn-lg'
                             style='background-color:white;  height: 150px; width: 150px; margin-bottom: 30px'>
                             <br>

@@ -10,7 +10,7 @@
     Kamar
     <div class="row" style="margin-top: 10px">
         <div class="col-lg-1">
-            <a href="#">
+            <a href="/home">
                 <img src="/images/backicon.png" alt="back">
             </a>
         </div>
@@ -32,7 +32,7 @@
                     <img src="/images/kamarA.jpg" alt="kamar" style="width: 225px; height: 200px; border-radius: 8px;">
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">A001</h4>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detailpenghuni" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
@@ -45,7 +45,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">A002</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detailpenghuni" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
@@ -58,7 +58,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">A003</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detailpenghuni" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
@@ -71,7 +71,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">A004</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detailpenghuni" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
@@ -84,7 +84,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">B001</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detailpenghuni" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
@@ -97,7 +97,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">B002</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detailpenghuni" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
@@ -110,7 +110,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">B003</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detailpenghuni" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
@@ -123,7 +123,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">B004</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detailpenghuni" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>

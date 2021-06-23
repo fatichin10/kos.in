@@ -51,7 +51,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">A002</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
@@ -64,7 +64,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">A003</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
@@ -77,7 +77,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">A004</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
@@ -90,7 +90,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">B001</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
@@ -103,7 +103,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">B002</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
@@ -116,7 +116,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">B003</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
@@ -129,7 +129,7 @@
                     <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">B004</h4>
                     </a>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="#" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>

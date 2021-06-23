@@ -23,10 +23,10 @@
     </style>
 
     <div class="container" style="margin-top: 25px">
-       Tagihan
+        Tagihan
         <div class="row" style="margin-top: 10px">
             <div class="col-lg-1">
-                <a href="#">
+                <a href="/home">
                     <img src="/images/backicon.png" alt="back">
                 </a>
             </div>
@@ -34,7 +34,8 @@
                 <h3 style="display: inline">Tagihan Kontrak</h3>
                 <form action="/indexpenghuni/cari" method="GET">
                     <span class="iconify" data-icon="octicon-search" data-inline="false"></span>
-                    <input type="text"  style="margin-top: 7px" name="cari" placeholder="Cari tagihan" value="{{ old('cari') }}">
+                    <input type="text" style="margin-top: 7px" name="cari" placeholder="Cari tagihan"
+                        value="{{ old('cari') }}">
                 </form>
             </div>
         </div>

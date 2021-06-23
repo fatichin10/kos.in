@@ -28,7 +28,7 @@
         Keluhan / Form Keluhan
         <div class="row" style="margin-top: 10px">
             <div class="col-lg-1">
-                <a href="#">
+                <a href="/keluhan">
                     <img src="/images/backicon.png" alt="back">
                 </a>
             </div>
@@ -39,7 +39,7 @@
                         <h3>Edit Status Keluhan</h3>
                     </div>
                     <div class="col-lg-6" style="margin-top: 17px;">
-                        <a href="#" class="btn btn-light tombol2">Batal</a>
+                        <a href="keluhan" class="btn btn-light tombol2">Batal</a>
                         <a href="#" class="btn btn-success tombol">Save</a>
                     </div>
                 </div>
