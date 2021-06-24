@@ -4,7 +4,7 @@
 
     <style>
         h3,
-        h2 {
+        h1 {
             font-weight: 600;
         }
 
@@ -28,24 +28,28 @@
     <br>
 
     <div class="container background-box">
+
+        @foreach ($pengguna as $p)
         <div class="row">
             <div class="col-lg-2" style="text-align: center">
                 <i class="iconify" data-inline="false" data-icon="system-uicons:user-male-circle"
                     style="color: #4e4b66; font-size: 60px;">
                 </i>
-                <h6>xxxx</h6>
+                <h6>{{ $p->kosinID }}</h6>
             </div>
             <div class="col-lg-4">
-                <h2>Robi Sedati</h2>
-                <b><img src="/images/calendar.png"> 18 Januari 2019</b>
+                <h1 style="margin-top: 18px">{{ $p->namaPenghuni }}</h1>
             </div>
             <div class="col-lg-2">
 
             </div>
             <div class="col-lg-4" style="text-align: center; margin: 20px 0px">
-                <a href="/akun/detail" class="btn btn-success tombol">Detail Akun</a>
+                <a href="/akun/detail/{{ $p->kosinID }}" class="btn btn-success tombol">Detail Akun</a>
             </div>
         </div>
+        <hr>
+        @endforeach
+
     </div>
 
 @endsection

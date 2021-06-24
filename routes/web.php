@@ -21,9 +21,10 @@ Route::get('/login', function () {return view('login');})->name('login');
 //View Admin
 Route::get('/admin', function () {return view('dashboard');})->name('admin');
 
-Route::get('/akun', function () {return view('akun.index');})->name('akun');
-Route::get('/akun/buat',function () {return view('akun.buat');})->name('buat');
-Route::get('/akun/detail',function () {return view('akun.detail');})->name('detail');
+Route::get('/akun', 'AkunController@index')->name('akun');
+Route::get('/akun/buat', 'AkunController@buat')->name('buat');
+Route::post('/akun/store', 'AkunController@store');
+Route::get('/akun/detail/{kosinID}','AkunController@detail')->name('detail');
 
 Route::get('/kontrak', 'KontrakController@index')->name('kontrak');
 Route::get('/kontrak/buat', 'KontrakController@buat')->name('buat');
@@ -38,10 +39,12 @@ Route::get('/tagihan/edit/{idTagihan}', 'TagihanController@edit')->name('edit');
 Route::post('/tagihan/update', 'TagihanController@update');
 Route::get('/tagihan/hapus/{idTagihan}', 'TagihanController@hapus');
 
-Route::get('/kamar', function () {return view('kamar.index');})->name('kamar');
-Route::get('/kamar/buat', function () {return view('kamar.buat');})->name('buat');
-Route::get('/kamar/edit', function () {return view('kamar.edit');})->name('edit');
-Route::get('/kamar/detail', function () {return view('kamar.detail');})->name('detailkamar');
+Route::get('/kamar', 'KamarController@index')->name('kamar');
+Route::get('/kamar/buat', 'KamarController@buat')->name('buat');
+Route::post('/kamar/store', 'KamarController@store');
+Route::get('/kamar/edit/{idKamar}', 'KamarController@edit')->name('edit');
+Route::post('/kamar/update', 'KamarController@update');
+Route::get('/kamar/detail/{idKamar}', 'KamarController@detail')->name('detailkamar');
 
 Route::get('/laundry', function () {return view('laundry.daftarpesananmasuk');})->name('daftar pesanan masuk');
 Route::get('/laundry/detailpesanan', function () {return view('laundry.detailpesananpengelola');})->name('detail pesanan pengelola');
@@ -50,10 +53,10 @@ Route::get('/keluhan', function () {return view('keluhan.index');})->name('keluh
 Route::get('/keluhan/edit', function () {return view('keluhan.edit');})->name('edit');
 Route::get('/keluhan/detail', function () {return view('keluhan.detail');})->name('detail');
 
-Route::get('/furniture', function () {return view('furniture.index');})->name('furniture');
+Route::get('/furniture', 'FurnitureController@index')->name('furniture');
 Route::get('/furniture/tambah', function () {return view('furniture.tambah');})->name('tambah');
 Route::get('/furniture/edit', function () {return view('furniture.edit');})->name('edit');
-Route::get('/furniture/list', function () {return view('furniture.listMeja');})->name('list');
+Route::get('/furniture/list/{namaKategori}', 'FurnitureController@list')->name('list');
 
 //View Penghuni
 Route::get('/home', function () {return view('dashboardpenghuni');})->name('home');

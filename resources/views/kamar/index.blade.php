@@ -33,107 +33,20 @@
 
     <div class="container">
         <div class="row">
+
+            @foreach ($kamar as $k)
             <div class="col-sm-3 col-md-offset-3">
                 <div class="container background-box">
                     <img src="/images/kamarA.jpg" alt="kamar" style="width: 225px; height: 200px; border-radius: 8px;">
-                    <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">A001</h4>
+                    <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">{{ $k->namaKamar }}</h4>
                     <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
+                        <a href="/kamar/detail/{{ $k->idKamar }}" class="btn btn-success tombol">Detail Kamar</a>
                     </div>
                 </div>
                 <br>
             </div>
+            @endforeach
 
-            <div class="col-sm-3 col-md-offset-3">
-                <div class="container background-box">
-                    <a style= "color:white" href="">
-                    <img src="/images/kamarA.jpg" alt="kamar" style="width: 225px; height: 200px; border-radius: 8px;">
-                    <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">A002</h4>
-                    </a>
-                    <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
-                    </div>
-                </div>
-                <br>
-            </div>
-
-            <div class="col-sm-3 col-md-offset-3">
-                <div class="container background-box">
-                    <a style= "color:white" href="">
-                    <img src="/images/kamarA.jpg" alt="kamar" style="width: 225px; height: 200px; border-radius: 8px;">
-                    <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">A003</h4>
-                    </a>
-                    <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
-                    </div>
-                </div>
-                <br>
-            </div>
-
-            <div class="col-sm-3 col-md-offset-3">
-                <div class="container background-box">
-                    <a style= "color:white" href="">
-                    <img src="/images/kamarA.jpg" alt="kamar" style="width: 225px; height: 200px; border-radius: 8px;">
-                    <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">A004</h4>
-                    </a>
-                    <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
-                    </div>
-                </div>
-                <br>
-            </div>
-
-            <div class="col-sm-3 col-md-offset-3">
-                <div class="container background-box">
-                    <a style= "color:white" href="">
-                    <img src="/images/kamarB.jpg" alt="kamar" style="width: 225px; height: 200px; border-radius: 8px;">
-                    <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">B001</h4>
-                    </a>
-                    <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
-                    </div>
-                </div>
-                <br>
-            </div>
-
-            <div class="col-sm-3 col-md-offset-3">
-                <div class="container background-box">
-                    <a style= "color:white" href="">
-                    <img src="/images/kamarB.jpg" alt="kamar" style="width: 225px; height: 200px; border-radius: 8px;">
-                    <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">B002</h4>
-                    </a>
-                    <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
-                    </div>
-                </div>
-                <br>
-            </div>
-
-            <div class="col-sm-3 col-md-offset-3">
-                <div class="container background-box">
-                    <a style= "color:white" href="">
-                    <img src="/images/kamarB.jpg" alt="kamar" style="width: 225px; height: 200px; border-radius: 8px;">
-                    <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">B003</h4>
-                    </a>
-                    <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
-                    </div>
-                </div>
-                <br>
-            </div>
-
-            <div class="col-sm-3 col-md-offset-3">
-                <div class="container background-box">
-                    <a style= "color:white" href="">
-                    <img src="/images/kamarB.jpg" alt="kamar" style="width: 225px; height: 200px; border-radius: 8px;">
-                    <h4 style="text-align: center ;color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;">B004</h4>
-                    </a>
-                    <div class="col-lg-10" style="text-align: center; margin: ">
-                        <a href="/kamar/detail" class="btn btn-success tombol">Detail Kamar</a>
-                    </div>
-                </div>
-                <br>
-            </div>
         </div>
       </div>
 

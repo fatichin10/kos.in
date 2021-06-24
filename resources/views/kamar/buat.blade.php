@@ -29,37 +29,37 @@
 
                 <!--Form-->
                 <div class="container background-box" style="padding-top: 110px">
-                    <form action="#" method="#">
+                    <form action="kamar/store" method="post">
                         {{ csrf_field() }}
                         <input type="submit" value="Simpan" class="btn btn-success tombol" style="margin-top: -150px">
                         <div class="form-group row">
-                            <label for="nokamar" class="col-lg-3">No. Kamar <span style="color: #FC4E12">*</span></label>
+                            <label for="nokamar" class="col-lg-3">Nama Kamar <span style="color: #FC4E12">*</span></label>
                             <div class="col-lg-6">
-                                <input type="String" name="nokamar" required="required" class="form-control isian" id="nokamar"
-                                    min="0">
+                                <input type="String" name="nokamar" required="required" class="form-control isian" id="nokamar">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="status" class="col-lg-3">Status <span style="color: #FC4E12">*</span></label>
+                            <label for="ac" class="col-lg-3">AC </span></label>
                             <div class="col-lg-3">
-                                <select name="status" required="required" class="form-control isian" id="status">
-                                    <option value=""></option>
+                                <select name="ac" class="form-control isian" id="ac">
+                                    <option value="Ada">Ada</option>
+                                    <option value="Tidak">Tidak Ada</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="penghuni" class="col-lg-3">Penghuni <span style="color: #FC4E12">*</span></label>
+                            <label for="kamarmandi" class="col-lg-3">Kamar Mandi </span></label>
                             <div class="col-lg-3">
-                                <select name="penghuni" required="required" class="form-control isian" id="penghuni">
-                                    <option value=""></option>
+                                <select name="kamarmandi" class="form-control isian" id="kamarmandi">
+                                    <option value="Ada">Ada</option>
+                                    <option value="Tidak">Tidak Ada</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="ukuran" class="col-lg-3">Ukuran<span style="color: #FC4E12">*</span></label>
                             <div class="col-lg-6">
-                                <input type="text" name="ukuran" required="required" class="form-control isian" id="ukuran"
-                                    min="0">
+                                <input type="text" name="ukuran" required="required" class="form-control isian" id="ukuran">
                             </div>
                         </div>
                     </form>

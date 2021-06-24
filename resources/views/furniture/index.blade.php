@@ -117,6 +117,8 @@ div.footer a.Cbtn-primary:hover{
     </div>
         <div class="container-fluid">
             <div class="row">
+
+                @foreach ($kategori as $k)
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="tile">
                         <div class="wrapper">
@@ -126,268 +128,32 @@ div.footer a.Cbtn-primary:hover{
                             </div>
 
                             <div class="header">
-                                Meja
+                                {{ $k->namaKategori }}
                             </div>
 
                             <div class="stats">
                                 <div>
-                                    3098<strong>TOTAL</strong>
+                                    0<strong>TOTAL</strong>
                                 </div>
 
                                 <div>
-                                    562<strong>BAIK</strong>
+                                    0<strong>BAIK</strong>
                                 </div>
 
                                 <div>
-                                    182<strong>BURUK</strong>
+                                    0<strong>BURUK</strong>
                                 </div>
 
                             </div>
 
                             <div class="footer">
-                                <a href="/furniture/list" class="Cbtn Cbtn-primary">Detail</a>
+                                <a href="/furniture/list/{{ $k->namaKategori }}" class="Cbtn Cbtn-primary">Detail</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                @endforeach
 
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="tile">
-                        <div class="wrapper">
-
-                            <div class="banner-img">
-                            <img src="images/furniture.png" alt="Image 1">
-                            </div>
-
-                            <div class="header">
-                                Kursi
-                            </div>
-
-                            <div class="stats">
-                                <div>
-                                    3098<strong>TOTAL</strong>
-                                </div>
-
-                                <div>
-                                    562<strong>BAIK</strong>
-                                </div>
-
-                                <div>
-                                    182<strong>BURUK</strong>
-                                </div>
-
-                            </div>
-
-                            <div class="footer">
-                                <a href="furniture/list" class="Cbtn Cbtn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="tile">
-                        <div class="wrapper">
-
-                            <div class="banner-img">
-                            <img src="images/furniture.png" alt="Image 1">
-                            </div>
-
-                            <div class="header">
-                                Lemari
-                            </div>
-
-                            <div class="stats">
-                                <div>
-                                    3098<strong>TOTAL</strong>
-                                </div>
-
-                                <div>
-                                    562<strong>BAIK</strong>
-                                </div>
-
-                                <div>
-                                    182<strong>BURUK</strong>
-                                </div>
-
-                            </div>
-
-                            <div class="footer">
-                                <a href="#" class="Cbtn Cbtn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="tile">
-                        <div class="wrapper">
-
-                            <div class="banner-img">
-                            <img src="images/furniture.png" alt="Image 1">
-                            </div>
-
-                            <div class="header">
-                                Kasur
-                            </div>
-
-                            <div class="stats">
-                                <div>
-                                    3098<strong>TOTAL</strong>
-                                </div>
-
-                                <div>
-                                    562<strong>BAIK</strong>
-                                </div>
-
-                                <div>
-                                    182<strong>BURUK</strong>
-                                </div>
-
-                            </div>
-
-                            <div class="footer">
-                                <a href="#" class="Cbtn Cbtn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="tile">
-                        <div class="wrapper">
-
-                            <div class="banner-img">
-                            <img src="images/furniture.png" alt="Image 1">
-                            </div>
-
-                            <div class="header">
-                                Rak Sepatu
-                            </div>
-
-                            <div class="stats">
-                                <div>
-                                    3098<strong>TOTAL</strong>
-                                </div>
-
-                                <div>
-                                    562<strong>BAIK</strong>
-                                </div>
-
-                                <div>
-                                    182<strong>BURUK</strong>
-                                </div>
-
-                            </div>
-
-                            <div class="footer">
-                                <a href="#" class="Cbtn Cbtn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="tile">
-                        <div class="wrapper">
-
-                            <div class="banner-img">
-                            <img src="images/furniture.png" alt="Image 1">
-                            </div>
-
-                            <div class="header">
-                                Ranjang
-                            </div>
-
-                            <div class="stats">
-                                <div>
-                                    3098<strong>TOTAL</strong>
-                                </div>
-
-                                <div>
-                                    562<strong>BAIK</strong>
-                                </div>
-
-                                <div>
-                                    182<strong>BURUK</strong>
-                                </div>
-
-                            </div>
-
-                            <div class="footer">
-                                <a href="#" class="Cbtn Cbtn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="tile">
-                        <div class="wrapper">
-
-                            <div class="banner-img">
-                            <img src="images/furniture.png" alt="Image 1">
-                            </div>
-
-                            <div class="header">
-                                AC
-                            </div>
-
-                            <div class="stats">
-                                <div>
-                                    3098<strong>TOTAL</strong>
-                                </div>
-
-                                <div>
-                                    562<strong>BAIK</strong>
-                                </div>
-
-                                <div>
-                                    182<strong>BURUK</strong>
-                                </div>
-
-                            </div>
-
-                            <div class="footer">
-                                <a href="#" class="Cbtn Cbtn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="tile">
-                        <div class="wrapper">
-
-                            <div class="banner-img">
-                            <img src="images/furniture.png" alt="Image 1">
-                            </div>
-
-                            <div class="header">
-                                Meja
-                            </div>
-
-                            <div class="stats">
-                                <div>
-                                    3098<strong>TOTAL</strong>
-                                </div>
-
-                                <div>
-                                    562<strong>BAIK</strong>
-                                </div>
-
-                                <div>
-                                    182<strong>BURUK</strong>
-                                </div>
-
-                            </div>
-
-                            <div class="footer">
-                                <a href="#" class="Cbtn Cbtn-primary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 </div>

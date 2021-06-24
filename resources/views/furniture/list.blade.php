@@ -235,7 +235,7 @@ iframe {
 </style>
 
 <div class="container" style="margin-top: 25px">
-    Furniture/Meja
+    Furniture / {{ $namaKategori }}
     <div class="row" style="margin-top: 10px">
         <div class="col-lg-1">
             <a href="/furniture">
@@ -243,13 +243,13 @@ iframe {
             </a>
         </div>
         <div class="col-lg-3" style="margin-top: 17px">
-            <h3>Meja</h3>
+            <h3>{{ $namaKategori }}</h3>
         </div>
         <div class="col-lg-4" style="margin-top: 17px">
 
         </div>
         <div class="col-lg-4" style="margin-top: 17px">
-            <a href="/furniture/tambah" class="btn btn-success tombol" style="font-size: 18px"> + Tambah </a>
+            <a href="/furniture/tambah/{{ $namaKategori }}" class="btn btn-success tombol" style="font-size: 18px"> + Tambah </a>
         </div>
     </div>
 			<div class="wrap-table100">
@@ -273,63 +273,26 @@ iframe {
 							</div>
 						</div>
 
+                        @foreach ($furniture as $f)
                         <div class="rows">
 							<div class="cell" data-title="Full Name">
-								001
+								{{ $f->idFurniture }}
 							</div>
 							<div class="cell" data-title="Age">
-								Kecap Welding
+								{{ $f->merekFurniture }}
 							</div>
 							<div class="cell" data-title="Job Title">
-								A001
+								{{ $f->idKamar }}
 							</div>
 							<div class="cell" data-title="Location">
-								Baik
+								{{ $f->statusFurniture }}
 							</div>
                             <div class="cell" data-title="Aksi">
-                                <a type="button" class="btn btn-outline-success" href="/furniture/edit">Edit</a>
-                                <a type="button" class="btn btn-outline-danger">Hapus</a>
+                                <a type="button" class="btn btn-outline-success" href="/furniture/edit/{{ $f->idFurniture }}">Edit</a>
+                                <a type="button" class="btn btn-outline-danger" href="/furniture/hapus{{ $f->idFurniture }}">Hapus</a>
 							</div>
 						</div>
-
-                        <div class="rows">
-							<div class="cell" data-title="Full Name">
-								001
-							</div>
-							<div class="cell" data-title="Age">
-								Kecap Welding
-							</div>
-							<div class="cell" data-title="Job Title">
-								A001
-							</div>
-							<div class="cell" data-title="Location">
-								Baik
-							</div>
-                            <div class="cell" data-title="Aksi">
-                                <button type="button" class="btn btn-outline-success">Edit</button>
-                                <button type="button" class="btn btn-outline-danger">Hapus</button>
-							</div>
-						</div>
-
-                        <div class="rows">
-							<div class="cell" data-title="Full Name">
-								001
-							</div>
-							<div class="cell" data-title="Age">
-								Kecap Welding
-							</div>
-							<div class="cell" data-title="Job Title">
-								A001
-							</div>
-							<div class="cell" data-title="Location">
-								Baik
-							</div>
-                            <div class="cell" data-title="Aksi">
-                                <button type="button" class="btn btn-outline-success">Edit</button>
-                                <button type="button" class="btn btn-outline-danger">Hapus</button>
-							</div>
-						</div>
-
+                        @endforeach
 					</div>
 			</div>
 	</div>
