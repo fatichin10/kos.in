@@ -43,23 +43,29 @@
     <br>
 
     <div class="container background-box">
+        @foreach ($laundry as $l)
         <div class="row">
             <div class="col-lg-2" style="text-align: center">
                 <i class="iconify icon" data-inline="false" data-icon="uil:money-bill"
                     style="color: #4e4b66; font-size: 50px;">
                 </i>
             </div>
-            <div class="col-lg-4">
-                <h3 style="margin-top: 20px">ID Pesanan</h3>
+            <div class="col-lg-3">
+                <h3>{{ $l->idPesanan }}</h3>
             </div>
             <div class="col-lg-3">
-                <h3 style="margin-top: 20px">Rudi Sedati</h3>
+                <h3>{{ $l->penghuni }}</h3>
             </div>
             <div class="col-lg-3">
-                <img src="/images/check.png" style="margin-top: 20px"><span class="status-aktif">Telah Ditangani</span>
+                <img src="/images/check.png"><span class="status-aktif">{{ $l->status }}</span>
+            </div>
+            <div class="col-lg-1">
+                <a href="/laundry/detailpesanan/{{ $l->idPesanan }}" class="btn btn-primary btn-block">Detail</a>
             </div>
         </div>
         <hr>
+        @endforeach
+
     </div>
 
 @endsection

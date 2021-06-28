@@ -31,61 +31,58 @@
 
                 <!--Form-->
                 <div class="container background-box" style="padding-top: 30px">
-                    <form action="#" method="#">
+                    <form action="/laundry/update" method="post">
                         {{ csrf_field() }}
-                        <input type="submit" value="Simpan" class="btn btn-success tombol" style="margin-top: -70px">
-                        <div class="row">
-                            <div class="col-lg-2" style="margin-bottom: 30px">
-                                <input type="text" name="id" class="form-control btn-dark" value="xxxx" disabled>
+                        @foreach ($laundry as $l)
+                            <input type="submit" value="Simpan" class="btn btn-success tombol" style="margin-top: -70px">
+                            <div class="row">
+                                <div class="col-lg-2" style="margin-bottom: 30px">
+                                    <input type="text" name="idPesanan" id="idPesanan" class="form-control btn-dark"
+                                        value="{{ $l->idPesanan }}" disabled>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="nama" class="col-lg-3">Nama Penghuni<span style="color: #FC4E12">*</span></label>
-                            <div class="col-lg-6">
-                                <input type="text" name="nama" class="form-control isian" id="nama" value="Rudi Sedati"
-                                    disabled>
+                            <div class="form-group row">
+                                <label for="nama" class="col-lg-3">ID Penghuni<span style="color: #FC4E12">*</span></label>
+                                <div class="col-lg-6">
+                                    <input type="text" name="nama" class="form-control isian" id="nama"
+                                        value="{{ $l->kosinID }}" disabled>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="idkontrak" class="col-lg-3">ID Pesanan </label>
-                            <div class="col-lg-2">
-                                <input type="text" name="idkontrak" class="form-control isian" id="idkontrak" value="xxxx"
-                                    disabled>
+                            <div class="form-group row">
+                                <label for="tglpesan" class="col-lg-3">Tanggal Pesanan <span
+                                        style="color: #FC4E12">*</span></label>
+                                <div class="col-lg-6">
+                                    <input type="text" name="tglpesan" class="form-control isian" id="tglpesan"
+                                        value="{{ $l->tanggalPesanan }}" disabled>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="periode" class="col-lg-3">Tanggal Pesanan <span
-                                    style="color: #FC4E12">*</span></label>
-                            <div class="col-lg-6">
-                                <input type="text" name="periode" class="form-control isian" id="periode"
-                                    value="15/01/2019" disabled>
+                            <div class="form-group row">
+                                <label for="tglambil" class="col-lg-3">Tanggal Pegambilan <span
+                                        style="color: #FC4E12">*</span></label>
+                                <div class="col-lg-3">
+                                    <input type="text" name="tglambil" class="form-control isian" id="tglambil"
+                                        value="{{ $l->tanggalPengambilan }}" disabled>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="tgltagih" class="col-lg-3">Tanggal Pegambilan <span
-                                    style="color: #FC4E12">*</span></label>
-                            <div class="col-lg-3">
-                                <input type="text" name="tgltagih" class="form-control isian" id="tgltagih"
-                                    value="18/01/2019" disabled>
+                            <div class="form-group row">
+                                <label for="berat" class="col-lg-3">Berat <span style="color: #FC4E12">*</span></label>
+                                <div class="col-lg-6">
+                                    <input type="number" name="berat" class="form-control isian" id="berat"
+                                        value="{{ $l->berat }}" disabled>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="berat" class="col-lg-3">Berat <span style="color: #FC4E12">*</span></label>
-                            <div class="col-lg-6">
-                                <input type="number" name="berat" class="form-control isian" id="berat"
-                                    value="3" disabled>
+                            <div class="form-group row">
+                                <label for="status" class="col-lg-3">Status <span style="color: #FC4E12">*</span></label>
+                                <div class="col-lg-6">
+                                    <select name="status" class="form-control isian" id="status">
+                                        <option value="{{ $l->status }}">{{ $l->status }}</option>
+                                        <option value="Terima">Terima </option>
+                                        <option value="Tolak">Tolak</option>
+                                        <option value="Selesai">Selesai</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="status" class="col-lg-3">Status<span style="color: #FC4E12">*</span></label>
-                            <div class="col-lg-6">
-                                <select name="status" class="form-control isian" id="status">
-                                    <option value="Belum Lunas">Terima </option>
-                                    <option value="Lunas">Tolak</option>
-                                    <option value="Lunas">Selesai</option>
-                                </select>
-                            </div>
-
+                        @endforeach
                     </form>
                 </div>
             </div>
