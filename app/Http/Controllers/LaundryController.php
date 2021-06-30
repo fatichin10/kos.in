@@ -34,14 +34,30 @@ class LaundryController extends Controller
         DB::table('laundry')
             ->where('idPesanan', $request->idPesanan)
             ->update([
-                'kosinID' => $request->nama,
-                'tanggalPesanan' => $request->tglpesan,
-                'tanggalpengambilan' => $request->tglambil,
-                'berat' => $request->berat,
                 'status' => $request->status
             ]);
 
         //alihkan halaman ke halaman laundry
         return redirect('/laundry');
+    }
+
+    public function buat()
+    {
+        $pengguna = DB::table('pengguna')->get();
+        // memanggil view tambah
+        return view('laundry.buatlaundry', ['pengguna' => $pengguna]);
+    }
+
+    Public function store(Request $request)
+    {
+        // insert data ke table tagihan
+        DB::table('laundry')->insert([
+            'kosinID' => $request->nama,
+            'tanggalPesanan' => $request->tglpesan,
+            'tanggalPengambilan' => $request->tglambil,
+            'berat' => $request->berat,
+        ]);
+        // alihkan halaman ke halaman tagihan
+        return redirect('/laundrypenghuni');
     }
 }

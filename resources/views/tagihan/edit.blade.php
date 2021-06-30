@@ -36,6 +36,7 @@
                         <form action="/tagihan/update" method="post">
                             {{ csrf_field() }}
                             <input type="submit" value="Simpan" class="btn btn-success tombol" style="margin-top: -70px">
+                            <input type="hidden" name="idTagihan" id="idTagihan" value="{{ $t->idTagihan }}">
                             <div class="row">
                                 <div class="col-lg-2" style="margin-bottom: 30px">
                                     <input type="text" name="idTagihan" class="form-control btn-dark"
@@ -68,7 +69,7 @@
                             <div class="form-group row">
                                 <label for="tglbayar" class="col-lg-3">Tanggal Pembayaran</label>
                                 <div class="col-lg-3">
-                                    <input type="date" name="tgltagih" class="form-control isian" id="tgltagih">
+                                    <input type="date" name="tglbayar" class="form-control isian" id="tglbayar">
                                 </div>
                             </div>
                             <div class="form-group row">

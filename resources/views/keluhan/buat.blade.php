@@ -30,22 +30,17 @@
     <!--Form-->
     <div class="container background-box" style="padding-top: 54px">
 
-        <form action="#" method="#" style="padding-left: 50px">
+        <form action="/keluhan/store" method="post" style="padding-left: 50px">
             {{ csrf_field() }}
-
             <input type="submit" value="Submit" class="btn btn-success tombol" style="margin-top: -100px">
-            <div class="row">
-                <div class="col-lg-2" style="margin-bottom: 30px">
-                    <input type="text" name="id" class="form-control btn-dark text-center" value="ID" disabled
-                        class="rounded-pill" style="border-radius: 16px; width: 80px; height: 40px;">
-                </div>
-            </div>
             <!--No. Kamar-->
             <div class="form-group row">
-                <label for="kamar" class="col-lg-3">No. Kamar <span style="color: #FC4E12">*</span></label>
+                <label for="kamar" class="col-lg-3">Kamar <span style="color: #FC4E12">*</span></label>
                 <div class="col-lg-3">
                     <select name="kamar" required="required" class="form-control isian" id="kamar">
-                        <option value=""></option>
+                        @foreach ($kamar as $k)
+                        <option value="{{ $k->idKamar }}">{{ $k->namaKamar }}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>
@@ -69,8 +64,8 @@
             <div class="form-group row">
                 <label for="deskeluhan" class="col-lg-3">Deskripsi keluhan</label>
                 <div class="col-lg-6">
-                    <input type="text" name="deskeluhan" class="form-control isian" id="deskeluhan"
-                        placeholder="Deskripsi keluhan...">
+                    <textarea name="deskeluhan" class="form-control isian" id="deskeluhan"
+                    placeholder="Deskripsi keluhan..." rows="3"></textarea>
                 </div>
             </div>
         </form>

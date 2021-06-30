@@ -50,9 +50,9 @@ Route::get('/laundry', 'LaundryController@index')->name('daftar pesanan masuk');
 Route::get('/laundry/detailpesanan/{idPesanan}', 'LaundryController@detail')->name('detail pesanan pengelola');
 Route::post('/laundry/update', 'LaundryController@update');
 
-Route::get('/keluhan', function () {return view('keluhan.index');})->name('keluhan');
-Route::get('/keluhan/edit', function () {return view('keluhan.edit');})->name('edit');
-Route::get('/keluhan/detail', function () {return view('keluhan.detail');})->name('detail');
+Route::get('/keluhan', 'KeluhanController@index')->name('keluhan');
+Route::get('/keluhan/edit/{idKeluhan}', 'KeluhanController@edit')->name('edit');
+Route::post('/keluhan/update', 'KeluhanController@update');
 
 Route::get('/furniture', 'FurnitureController@index')->name('furniture');
 Route::get('/furniture/tambah/{namaKategori}', 'FurnitureController@tambah')->name('tambah');
@@ -74,11 +74,13 @@ Route::get('/tagihanpenghuni', function () {return view('tagihan.indexpenghuni')
 Route::get('/detailtagihanpenghuni', function () {return view('tagihan.detailtagihankontrak');})->name('detail tagihan penghuni');
 
 Route::get('/laundrypenghuni', function () {return view('laundry.history');})->name('history laundry');
-Route::get('/laundrypenghuni/buatpesanan', function () {return view('laundry.buatlaundry');})->name('buat pesanan');
+Route::get('/laundrypenghuni/buatpesanan', 'LaundryController@buat')->name('buat pesanan');
+Route::post('/laundrypenghuni/store', 'LaundryController@store');
 Route::get('/laundrypenghuni/detailpesanan', function () {return view('laundry.detailpesanan');})->name('detail pesanan');
 
 Route::get('/keluhanpenghuni', function () {return view('keluhan.indexpenghuni');})->name('keluhanpenghuni');
-Route::get('/keluhan/buat', function () {return view('keluhan.buat');})->name('buat');
+Route::get('/keluhan/buat', 'KeluhanController@buat')->name('buat');
+Route::post('/keluhan/store', 'KeluhanController@store');
 Route::get('/keluhanpenghuni/detail', function () {return view('keluhan.detailpenghuni');})->name('detailpenghuni');
 
 Route::get('/kontrakpenghuni', function () {return view('kontrak.kontrakpenghuni');})->name('kontrakpenghuni');
@@ -86,3 +88,4 @@ Route::get('/kontrakpenghuni', function () {return view('kontrak.kontrakpenghuni
 //Tidak Terpakai
 //Route::get('/keluhan/buatsuccess', function () {return view('keluhan.buatsuccess');})->name('buatsuccess');
 //Route::get('/furniture/detail', function () {return view('furniture.detailmeja');})->name('detail');
+//Route::get('/keluhan/detail', function () {return view('keluhan.detail');})->name('detail');

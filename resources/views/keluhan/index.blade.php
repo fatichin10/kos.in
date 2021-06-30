@@ -53,29 +53,19 @@
             <thead>
                 <tr>
                     <th class="text-center">ID Keluhan</th>
-                    <th class="text-center">No. Kamar</th>
+                    <th class="text-center">Kamar</th>
                     <th class="text-center">Status</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>ID Keluhan</td>
-                    <td>No. Kamar</td>
-                    <td>Status</td>
-                    <td><a href="/keluhan/detail" class="btn btn-success tombol">Detail</a>
-                </tr>
-                <tr>
-                    <td>ID Keluhan</td>
-                    <td>No. Kamar</td>
-                    <td>Status</td>
-                    <td><a href="/keluhan/detail" class="btn btn-success tombol">Detail</a>
-                </tr>
-                <tr>
-                    <td>ID Keluhan</td>
-                    <td>No. Kamar</td>
-                    <td>Status</td>
-                    <td><a href="/keluhan/detail" class="btn btn-success tombol">Detail</a>
-                </tr>
+                @foreach ($keluhan as $k)
+                    <tr>
+                        <td>{{ $k->idKeluhan }}</td>
+                        <td>{{ $k->kamar }}</td>
+                        <td>{{ $k->statusKeluhan }}</td>
+                        <td><a href="/keluhan/edit/{{ $k->idKeluhan }}" class="btn btn-success tombol">Lihat</a>
+                    </tr>
+                @endforeach
             </tbody>
         </table>
     </div>

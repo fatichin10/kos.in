@@ -32,9 +32,6 @@ class TagihanController extends Controller
         DB::table('tagihan')
             ->where('idTagihan', $request->idTagihan)
             ->update([
-                'idKontrak' => $request->idkontrak,
-                'periodePembayaran' => $request->periode,
-                'tanggalPenagihan' => $request->tgltagih,
                 'tanggalPembayaran' => $request->tglbayar,
                 'status' => $request->status
             ]);

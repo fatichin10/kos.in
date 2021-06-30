@@ -55,8 +55,8 @@
                     @auth
                         <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
                     @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login <span class="iconify"
-                                data-inline="false" data-icon="mi:log-in" style="font-size: 18px;"></span></a>
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Logout <span class="iconify"
+                                data-inline="false" data-icon="mi:log-out" style="font-size: 18px;"></span></a>
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>

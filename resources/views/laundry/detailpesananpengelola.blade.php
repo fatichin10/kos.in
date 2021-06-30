@@ -35,9 +35,10 @@
                         {{ csrf_field() }}
                         @foreach ($laundry as $l)
                             <input type="submit" value="Simpan" class="btn btn-success tombol" style="margin-top: -70px">
+                            <input type="hidden" name="idPesanan" id="idPesanan" value="{{ $l->idPesanan }}">
                             <div class="row">
                                 <div class="col-lg-2" style="margin-bottom: 30px">
-                                    <input type="text" name="idPesanan" id="idPesanan" class="form-control btn-dark"
+                                    <input type="text" name="id" id="id" class="form-control btn-dark"
                                         value="{{ $l->idPesanan }}" disabled>
                                 </div>
                             </div>
@@ -57,8 +58,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="tglambil" class="col-lg-3">Tanggal Pegambilan <span
-                                        style="color: #FC4E12">*</span></label>
+                                <label for="tglambil" class="col-lg-3">Tanggal Pegambilan </label>
                                 <div class="col-lg-3">
                                     <input type="text" name="tglambil" class="form-control isian" id="tglambil"
                                         value="{{ $l->tanggalPengambilan }}" disabled>

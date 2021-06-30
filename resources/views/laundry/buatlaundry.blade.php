@@ -31,37 +31,39 @@
 
                 <!--Form-->
                 <div class="container background-box" style="padding-top: 110px">
-                    <form action="#" method="#">
+                    <form action="/laundrypenghuni/store" method="post">
                         {{ csrf_field() }}
-                        <input type="submit" value="Kirim" class="btn btn-success tombol" style="margin-top: -150px">
+                        <input type="submit" value="Submit" class="btn btn-success tombol" style="margin-top: -150px">
                         <div class="form-group row">
                             <label for="nama" class="col-lg-3">Nama Penghuni<span style="color: #FC4E12">*</span></label>
                             <div class="col-lg-6">
-                                <input type="text" name="nama" required="required" class="form-control isian"
-                                id="nama">
+                                <select name="nama" required="required" class="form-control isian" id="nama">
+                                    @foreach ($pengguna as $p)
+                                        <option value="{{ $p->kosinID }}">{{ $p->namaPenghuni }}</option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="tglmasuk" class="col-lg-3">Tanggal Pesanan <span
+                            <label for="tglpesan" class="col-lg-3">Tanggal Pesanan <span
                                     style="color: #FC4E12">*</span></label>
                             <div class="col-lg-3">
                                 <input type="date" name="tglpesan" required="required" class="form-control isian"
-                                    id="tglmasuk">
+                                    id="tglpesan">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="tglmasuk" class="col-lg-3">Tanggal Pengambilan <span
-                                    style="color: #FC4E12">*</span></label>
+                            <label for="tglambil" class="col-lg-3">Tanggal Pengambilan </label>
                             <div class="col-lg-3">
-                                <input type="date" name="tglambil" required="required" class="form-control isian"
-                                    id="tglmasuk">
+                                <input type="date" name="tglambil" class="form-control isian"
+                                    id="tglambil">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="biaya" class="col-lg-3">Berat <span style="color: #FC4E12">*</span></label>
+                            <label for="berat" class="col-lg-3">Berat <span style="color: #FC4E12">*</span></label>
                             <div class="col-lg-6">
-                                <input type="number" name="biaya" required="required" class="form-control isian" id="berat"
-                                    min="0" placeholder="Biaya dalam Rupiah">
+                                <input type="number" name="berat" required="required" class="form-control isian" id="berat"
+                                    min="0" max="15" placeholder="Berat dalam kg">
                             </div>
                         </div>
                     </form>

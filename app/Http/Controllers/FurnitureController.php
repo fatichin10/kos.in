@@ -74,9 +74,9 @@ class FurnitureController extends Controller
     {
         //update data tagihan
         DB::table('furniture')
-            ->where('idFurniture', $request->id)
+            ->where('idFurniture', $request->idFurniture)
             ->update([
-                'idKamar' => $request->kamar,
+                'idKamar' => $request->idKamar,
                 'statusFurniture' => $request->status,
             ]);
 
